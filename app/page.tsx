@@ -10,14 +10,15 @@ export default function Home() {
           InkWeave
         </span>
         <div className="flex items-center gap-6 font-sans text-sm" style={{ color: "var(--text-secondary)" }}>
-          <Link href="#how-it-works" className="hover:text-amber-400 transition-colors">How it works</Link>
-          <Link href="#pricing" className="hover:text-amber-400 transition-colors">Pricing</Link>
+          <Link href="/publish" className="hover:text-amber-400 transition-colors hidden md:inline">Publish</Link>
+          <Link href="/showcase" className="hover:text-amber-400 transition-colors hidden md:inline">Showcase</Link>
+          <Link href="/pricing" className="hover:text-amber-400 transition-colors">Pricing</Link>
           <Link
             href="/start"
             className="px-4 py-2 text-sm font-sans font-medium transition-colors"
             style={{ background: "var(--amber)", color: "var(--ink)", borderRadius: "2px" }}
           >
-            Start free
+            Try free
           </Link>
         </div>
       </nav>
@@ -221,41 +222,42 @@ export default function Home() {
       {/* PRICING */}
       <section id="pricing" className="px-6 py-24 max-w-5xl mx-auto">
         <p className="font-sans text-xs tracking-widest uppercase mb-3 text-center" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>
-          Pricing
+          Subscriptions
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          One price. Full book.
+          Write books. Publish them. Sell them.
         </h2>
-        <p className="text-center mb-16 font-sans" style={{ color: "var(--text-secondary)" }}>
-          No per-word meters. No monthly traps. Pay for what you get.
+        <p className="text-center mb-16 font-sans max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
+          Subscribe to write multiple books. Buy once if you only want one.
+          UK publishing services bolt on to any plan.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              name: "Draft",
-              price: "£29",
-              sub: "Finish your first draft",
-              features: ["Full manuscript (50k+ words)", "DOCX download", "Outline review before generation", "Chapter approve & regenerate"],
-              cta: "Start at £29",
-              href: "/start?plan=draft",
+              name: "Reader",
+              price: "£9/mo",
+              sub: "1 book/quarter · DOCX",
+              features: ["4 books a year", "DOCX export", "Basic revisions", "Or £79/year (save £29)"],
+              cta: "Start Reader",
+              href: "/start?plan=reader",
               featured: false,
             },
             {
               name: "Author",
-              price: "£39",
-              sub: "Most popular — full control",
-              features: ["Everything in Draft", "DOCX + PDF export", "Structure repair & style control", "Revisions & re-weaves", "UK spelling & grammar"],
-              cta: "Get your book",
+              price: "£19/mo",
+              sub: "Most popular · 12 books/year",
+              features: ["1 book per month", "DOCX + PDF + EPUB", "Full revision control", "UK publishing guide", "Or £179/year (save £49)"],
+              cta: "Start Author",
               href: "/start?plan=author",
               featured: true,
             },
             {
-              name: "Publish-Ready",
-              price: "£49",
-              sub: "Retail-ready bundle",
-              features: ["Everything in Author", "KDP/IngramSpark export", "Blurb & metadata help", "AI disclosure helper", "Quality-checked manuscript"],
-              cta: "Go publish-ready",
-              href: "/start?plan=publish",
+              name: "Pro",
+              price: "£49/mo",
+              sub: "Unlimited + remote control",
+              features: ["Unlimited books", "Live remote control", "Priority queue", "All formats", "Or £449/year (save £139)"],
+              cta: "Start Pro",
+              href: "/start?plan=pro",
               featured: false,
             },
           ].map(({ name, price, sub, features, cta, href, featured }) => (
@@ -297,17 +299,28 @@ export default function Home() {
             </div>
           ))}
         </div>
+        {/* One-time */}
         <div className="mt-10 p-6 font-sans" style={{ background: "var(--ink-soft)", borderRadius: "2px" }}>
-          <p className="text-xs uppercase tracking-widest mb-4" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>Optional add-ons</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm" style={{ color: "var(--text-secondary)" }}>
-            <span>✦ AI edit pass — £15</span>
-            <span>✦ Cover brief pack — £9</span>
-            <span>✦ Try one chapter — Free</span>
+          <p className="text-xs uppercase tracking-widest mb-4" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>One-time (no subscription)</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm" style={{ color: "var(--text-secondary)" }}>
+            <span>✦ Single Book — £39 (DOCX manuscript)</span>
+            <span>✦ Author Bundle — £89 (book + edit + cover + KDP)</span>
           </div>
         </div>
-        <p className="mt-4 text-center text-xs font-sans" style={{ color: "var(--text-dim)" }}>
-          Remote Control studio — for ghostwriters &amp; agencies — £79/mo. <Link href="/contact" className="underline">Get in touch</Link>.
-        </p>
+
+        {/* UK Publishing */}
+        <div className="mt-6 p-6 font-sans" style={{ background: "var(--ink-soft)", borderRadius: "2px", borderLeft: "3px solid var(--amber)" }}>
+          <p className="text-xs uppercase tracking-widest mb-3" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>UK Publishing services — bolt on to any plan</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-xs mb-3" style={{ color: "var(--text-secondary)" }}>
+            <span>✦ UK ISBN — £29</span>
+            <span>✦ Paperback + KDP — £39</span>
+            <span>✦ Hardcover setup — £49</span>
+            <span>✦ IngramSpark global — £59</span>
+            <span>✦ AI disclosure — £9</span>
+            <span style={{ color: "var(--amber)" }}>✦ The Publish Bundle — £179</span>
+          </div>
+          <Link href="/pricing" className="text-xs underline" style={{ color: "var(--text-dim)" }}>See full pricing &rarr;</Link>
+        </div>
       </section>
 
       {/* BOTTOM CTA */}
