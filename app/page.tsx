@@ -9,9 +9,11 @@ export default function Home() {
         <span className="text-xl tracking-widest uppercase font-sans" style={{ color: "var(--amber)", letterSpacing: "0.2em" }}>
           InkWeave
         </span>
-        <div className="flex items-center gap-6 font-sans text-sm" style={{ color: "var(--text-secondary)" }}>
+        <div className="flex items-center gap-5 font-sans text-sm" style={{ color: "var(--text-secondary)" }}>
+          <Link href="/features" className="hover:text-amber-400 transition-colors hidden md:inline">Features</Link>
           <Link href="/publish" className="hover:text-amber-400 transition-colors hidden md:inline">Publish</Link>
           <Link href="/showcase" className="hover:text-amber-400 transition-colors hidden md:inline">Showcase</Link>
+          <Link href="/honest" className="hover:text-amber-400 transition-colors hidden md:inline">Honest</Link>
           <Link href="/pricing" className="hover:text-amber-400 transition-colors">Pricing</Link>
           <Link
             href="/start"
@@ -54,6 +56,9 @@ export default function Home() {
         </div>
         <p className="mt-4 text-xs font-sans" style={{ color: "var(--text-dim)" }}>
           No card required. Your manuscript. Your rights. Never used for training.
+        </p>
+        <p className="mt-6 text-xs font-sans" style={{ color: "var(--text-dim)" }}>
+          Not sure about AI? <Link href="/honest" className="underline" style={{ color: "var(--amber)" }}>Read every objection</Link> · See <Link href="/features" className="underline" style={{ color: "var(--amber)" }}>Author Mode</Link> (you write, AI assists)
         </p>
       </section>
 
@@ -347,7 +352,13 @@ export default function Home() {
       <footer className="px-6 py-10 border-t font-sans" style={{ borderColor: "var(--ink-muted)" }}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-4 text-sm" style={{ color: "var(--text-dim)" }}>
           <span>InkWeave — Built in the UK</span>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 md:gap-6">
+            <Link href="/features" className="hover:text-amber-400">Features</Link>
+            <Link href="/publish" className="hover:text-amber-400">Publish</Link>
+            <Link href="/showcase" className="hover:text-amber-400">Showcase</Link>
+            <Link href="/honest" className="hover:text-amber-400">Honest</Link>
+            <Link href="/pricing" className="hover:text-amber-400">Pricing</Link>
+            <Link href="/about" className="hover:text-amber-400">About</Link>
             <Link href="/privacy" className="hover:text-amber-400">Privacy</Link>
             <Link href="/terms" className="hover:text-amber-400">Terms</Link>
             <Link href="/contact" className="hover:text-amber-400">Contact</Link>
