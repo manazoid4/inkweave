@@ -52,6 +52,6 @@ After EVERY change to InkWeave:
 2. `npm run lint` — must pass
 3. `git add` specific files → `git commit`
 4. `git push origin <branch>`
-5. Create PR → auto-merge via CI
+5. Create PR -> auto-merge via CI
 
-Live URL: **inkweave.co.uk** (TBD — update when domain confirmed)
+Live URL: **inkweave.co.uk** (TBD)

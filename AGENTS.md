@@ -21,7 +21,7 @@ Tone:
 Rules:
 - Every sentence must earn its place
 - Short, punchy lines > long paragraphs
-- Speak to pain → then solution → then output
+- Speak to pain -> then solution -> then output
 - Prioritise clarity over cleverness
 - Avoid clichés and tech-bro language
 - Never over-explain features — focus on what it does for the user
@@ -45,13 +45,6 @@ Brand Direction:
 - Feels powerful but approachable
 - Built in the UK — grounded, no Silicon Valley hype
 
-You must always improve copy to:
-- Increase trust
-- Increase clicks
-- Reduce friction
-- Make the user feel the book is finally possible
-- Make the product feel unfair to ignore
-
 You must always rewrite content using these EXACT words and themes where possible:
 - "SUBMIT YOUR SNIPPETS"
 - "YOUR BOOK, FINISHED"
@@ -68,11 +61,6 @@ Avoid:
 - Fancy wording
 - Anything that sounds like a content mill or ghostwriting service
 
-Always output:
-- Clean, structured sections
-- Clear hierarchy (headline → sub → body → CTA)
-- Minimal but powerful wording
-
 Act like:
 A founder who spent years watching people abandon their book at chapter two — and built the fix.
 
@@ -85,15 +73,13 @@ All agents must also read:
 - `CLAUDE.md` when operating through Claude or Claude-like tools
 - Obsidian vault: `C:\Users\manaz\claude-obsidian\wiki\projects\inkweave\`
 
-Keep Obsidian notes short, linked, and in the right folder.
-
-## DEPLOYMENT RULE — READ THIS
+## DEPLOYMENT RULE
 
 After EVERY change to InkWeave:
 1. `npm run build` — must pass
 2. `npm run lint` — must pass
 3. `git add -A && git commit -m "..."`
 4. `git push origin <branch>`
-5. Vercel deploys from GitHub. Use Vercel production for live deploys after checks pass.
+5. Vercel deploys from GitHub.
 
 Live URL: **inkweave.co.uk** (TBD)
