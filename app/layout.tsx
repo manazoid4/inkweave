@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "InkWeave — Your Book, Finished",
-  description: "Submit your snippets. Get a full manuscript. No blank page. No stalling. One price, full book.",
-  keywords: ["write a book", "AI book writing", "finish my book", "self publishing UK", "manuscript generator"],
+  title: "InkWeave — Finish the book you already started",
+  description: "Turn scattered notes, snippets, and half-written scenes into a coherent manuscript you still control. AI-assisted, author-owned, publish-ready.",
+  keywords: ["finish my book", "AI book writing", "manuscript generator", "self publishing UK", "KDP", "snippet to book", "author owned AI"],
   openGraph: {
-    title: "InkWeave — Your Book, Finished",
-    description: "Turn your snippets into a full manuscript. UK-built, author-first.",
+    title: "InkWeave — Finish the book you already started",
+    description: "You steer. InkWeave weaves. Snippets in, coherent manuscript out. Author-owned. KDP-aware.",
     type: "website",
   },
 };

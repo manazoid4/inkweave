@@ -9,14 +9,14 @@ export default function StartPage() {
 
       <section className="px-6 py-16 max-w-2xl mx-auto">
         <p className="font-sans text-xs tracking-widest uppercase mb-3" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>
-          Step 1 of 3
+          Step 1 of 3 · No card required
         </p>
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
-          Submit your snippets
+          Try one chapter free
         </h1>
         <p className="font-sans mb-10" style={{ color: "var(--text-secondary)" }}>
           Paste anything — scenes, notes, ideas, half-written chapters. One sentence or ten pages.
-          InkWeave will read it all and build your book from it.
+          We&apos;ll generate one full chapter from your material. You decide what happens next.
         </p>
 
         <form className="flex flex-col gap-6">

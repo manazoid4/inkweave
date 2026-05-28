@@ -25,16 +25,15 @@ export default function Home() {
       {/* HERO */}
       <section className="px-6 py-24 max-w-4xl mx-auto text-center">
         <p className="font-sans text-xs tracking-widest uppercase mb-6" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>
-          Built for writers who have ideas but not the time
+          You steer. InkWeave weaves.
         </p>
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6" style={{ lineHeight: "1.05" }}>
-          Your book.<br />
-          <span style={{ color: "var(--amber)" }}>Finished.</span>
+          Finish the book<br />
+          <span style={{ color: "var(--amber)" }}>you already started.</span>
         </h1>
         <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto" style={{ color: "var(--text-secondary)", lineHeight: "1.7" }}>
-          Drop your snippets — scenes, notes, ideas, half-written chapters.
-          InkWeave structures them, expands them, and delivers a complete manuscript.
-          No blank page. No stalling. One price.
+          Turn scattered notes, snippets, and half-written scenes into a coherent manuscript you still control.
+          AI-assisted, author-owned, publish-ready.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -42,7 +41,7 @@ export default function Home() {
             className="px-8 py-4 text-base font-sans font-semibold transition-all hover:opacity-90"
             style={{ background: "var(--amber)", color: "var(--ink)", borderRadius: "2px" }}
           >
-            Weave your story — free chapter
+            Try one chapter free
           </Link>
           <Link
             href="#how-it-works"
@@ -53,18 +52,49 @@ export default function Home() {
           </Link>
         </div>
         <p className="mt-4 text-xs font-sans" style={{ color: "var(--text-dim)" }}>
-          Free chapter sample — no card required
+          No card required. Your manuscript. Your rights. Never used for training.
         </p>
+      </section>
+
+      {/* BEFORE / AFTER */}
+      <section className="px-6 py-16 max-w-5xl mx-auto">
+        <p className="font-sans text-xs tracking-widest uppercase mb-3 text-center" style={{ color: "var(--amber)", letterSpacing: "0.3em" }}>
+          The transformation
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Fragments in. Manuscript out.
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-8 font-sans text-sm leading-relaxed" style={{ background: "var(--ink-soft)", borderRadius: "2px", color: "var(--text-secondary)" }}>
+            <p className="text-xs uppercase tracking-widest mb-4" style={{ color: "var(--text-dim)" }}>What you have</p>
+            <div className="space-y-3 font-mono text-xs" style={{ color: "var(--text-secondary)" }}>
+              <p>&quot;She finds the key behind the painting...&quot;</p>
+              <p>&quot;Maya — 32, paramedic, lost a brother in 2019&quot;</p>
+              <p>&quot;CHAPTER 3 — confrontation at the harbour, weather should feel hostile&quot;</p>
+              <p>&quot;What if the journal entries are out of order on purpose?&quot;</p>
+              <p style={{ color: "var(--text-dim)" }}>+ 47 more notes</p>
+            </div>
+          </div>
+          <div className="p-8 font-sans text-sm leading-relaxed" style={{ background: "var(--paper)", color: "var(--ink)", borderRadius: "2px" }}>
+            <p className="text-xs uppercase tracking-widest mb-4" style={{ color: "var(--amber)" }}>What you get</p>
+            <p className="font-serif text-base mb-2" style={{ color: "var(--ink)" }}>Chapter Three — The Harbour</p>
+            <p className="font-serif italic text-sm" style={{ color: "#444" }}>
+              The wind off the water carried more than salt that morning. Maya pulled her collar higher and waited.
+              Three years since she&apos;d stood on this same pier. Three years since she&apos;d told herself she&apos;d never come back...
+            </p>
+            <p className="mt-4 text-xs" style={{ color: "#666" }}>Full manuscript: 67,200 words • 18 chapters • DOCX + PDF</p>
+          </div>
+        </div>
       </section>
 
       {/* TRUST BAR */}
       <section className="py-6 border-y" style={{ borderColor: "var(--ink-muted)" }}>
         <div className="max-w-4xl mx-auto px-6 flex flex-wrap justify-center gap-8 font-sans text-sm" style={{ color: "var(--text-dim)" }}>
-          <span>✦ 50,000–100,000 words</span>
-          <span>✦ DOCX + PDF download</span>
-          <span>✦ UK-built &amp; UK-priced</span>
-          <span>✦ Session remote control</span>
-          <span>✦ One price. Full book.</span>
+          <span>✦ Author-owned</span>
+          <span>✦ Not used for training</span>
+          <span>✦ AI-assisted, not AI-replacement</span>
+          <span>✦ KDP-aware export</span>
+          <span>✦ UK-built</span>
         </div>
       </section>
 
@@ -136,28 +166,31 @@ export default function Home() {
 
       {/* VS COMPETITORS */}
       <section className="px-6 py-20 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Why not just use ChatGPT?
+        <h2 className="text-3xl font-bold text-center mb-4">
+          Where InkWeave sits
         </h2>
+        <p className="text-center font-sans mb-12 max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
+          Not &quot;AI helps you write&quot;. Not a marketplace of freelancers. The piece in between: turn fragments into a finished, author-led draft.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              label: "ChatGPT / Claude.ai",
-              pain: "You prompt-engineer every paragraph. No structure. No book-length output. No output file.",
-              verdict: "Tool, not a product",
-              highlight: false,
-            },
-            {
-              label: "Sudowrite",
-              pain: "Chapter-by-chapter assistant. You still write. It just helps. $29/mo before you have a word count.",
-              verdict: "Co-pilot, not the driver",
+              label: "ChatGPT · Sudowrite",
+              pain: "Open-ended co-writing. You still drive every paragraph. No book structure memory. No publish-ready export.",
+              verdict: "Co-pilot",
               highlight: false,
             },
             {
               label: "InkWeave",
-              pain: "Drop your snippets. Get a full manuscript. DOCX + PDF. One price. Your book, finished.",
-              verdict: "Your book, finished.",
+              pain: "Snippet in, coherent manuscript out. Steered by you. Exports retail-ready for KDP and IngramSpark.",
+              verdict: "Finish-the-draft engine",
               highlight: true,
+            },
+            {
+              label: "Reedsy · Scrivener · AutoCrit",
+              pain: "Organise, edit, or hire after the draft exists. Assume you already have a finished manuscript.",
+              verdict: "Post-draft tooling",
+              highlight: false,
             },
           ].map(({ label, pain, verdict, highlight }) => (
             <div
@@ -199,30 +232,30 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              name: "Sample",
-              price: "Free",
-              sub: "No card required",
-              features: ["1 chapter from your snippets", "DOCX download", "See the quality before you pay"],
-              cta: "Start free",
-              href: "/start",
+              name: "Draft",
+              price: "£29",
+              sub: "Finish your first draft",
+              features: ["Full manuscript (50k+ words)", "DOCX download", "Outline review before generation", "Chapter approve & regenerate"],
+              cta: "Start at £29",
+              href: "/start?plan=draft",
               featured: false,
             },
             {
-              name: "Full Book",
+              name: "Author",
               price: "£39",
-              sub: "One-time per book",
-              features: ["Full manuscript (50k–100k words)", "DOCX + PDF", "Chapter review & approval", "UK spelling & grammar"],
+              sub: "Most popular — full control",
+              features: ["Everything in Draft", "DOCX + PDF export", "Structure repair & style control", "Revisions & re-weaves", "UK spelling & grammar"],
               cta: "Get your book",
-              href: "/start?plan=book",
+              href: "/start?plan=author",
               featured: true,
             },
             {
-              name: "Remote Control",
-              price: "£79/mo",
-              sub: "Unlimited books",
-              features: ["Everything in Full Book", "Live generation stream", "Real-time steering", "Session save & resume", "Priority queue"],
-              cta: "Take control",
-              href: "/start?plan=remote",
+              name: "Publish-Ready",
+              price: "£49",
+              sub: "Retail-ready bundle",
+              features: ["Everything in Author", "KDP/IngramSpark export", "Blurb & metadata help", "AI disclosure helper", "Quality-checked manuscript"],
+              cta: "Go publish-ready",
+              href: "/start?plan=publish",
               featured: false,
             },
           ].map(({ name, price, sub, features, cta, href, featured }) => (
@@ -269,9 +302,12 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm" style={{ color: "var(--text-secondary)" }}>
             <span>✦ AI edit pass — £15</span>
             <span>✦ Cover brief pack — £9</span>
-            <span>✦ UK Publishing Guide — £9</span>
+            <span>✦ Try one chapter — Free</span>
           </div>
         </div>
+        <p className="mt-4 text-center text-xs font-sans" style={{ color: "var(--text-dim)" }}>
+          Remote Control studio — for ghostwriters &amp; agencies — £79/mo. <Link href="/contact" className="underline">Get in touch</Link>.
+        </p>
       </section>
 
       {/* BOTTOM CTA */}
@@ -280,15 +316,18 @@ export default function Home() {
           The book has been in your head long enough.
         </h2>
         <p className="font-sans text-lg mb-10" style={{ color: "var(--text-secondary)" }}>
-          Submit your first snippets. Get a chapter back. If it&apos;s not good, walk away — no charge.
+          Submit your snippets. Get a chapter back. If it isn&apos;t good, walk away — no charge, no card.
         </p>
         <Link
           href="/start"
           className="inline-block px-10 py-5 text-base font-sans font-semibold transition-all hover:opacity-90"
           style={{ background: "var(--amber)", color: "var(--ink)", borderRadius: "2px" }}
         >
-          Weave your story — free to start
+          Try one chapter free
         </Link>
+        <p className="mt-6 text-xs font-sans" style={{ color: "var(--text-dim)" }}>
+          Author-owned · Never used for training · AI-assisted, not AI-replacement
+        </p>
       </section>
 
       {/* FOOTER */}
